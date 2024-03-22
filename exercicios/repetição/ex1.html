@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        input {
+            height: 100px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>contar de 1 a 10</h1>
+    <input type="button" value="clica aqui AGORA" onclick="clica()">
+    <div id="res"></div>
+    <script>
+        function clica() {
+            var res = document.getElementById('res')
+            for (var c = 0;c <= 10 ; c++) {
+                if (c % 2 == 1) {
+                document.write( '  ' + c + '   ' )
+            } else {
+                document.write( '  ' + '<mark>' + c + '</mark>' +  '   ' )
+            }
+            }
+        }
+    </script>
+</body>
+</html>

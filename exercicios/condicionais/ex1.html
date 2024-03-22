@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando media</title>
+    <style>
+        input {
+            height: 100px;
+            width: 150px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Media do aluno</h1>
+    <input type="button" value="Media do aluno" onclick="cc()">
+    <div id="res"></div>
+    <script>
+        function cc() {
+            var res = document.getElementById('res')
+            var nome = prompt('qual o nome do aluno?')
+            var nt1 = Number(prompt('Qual foi a primeira nota do aluno?'))
+            var nt2 = Number(prompt('Qual foi a segunda nota do aluno?'))
+            var m = (nt1 + nt2) / 2
+            document.write(`calculando a media de ${nome}<br>`)
+            document.write(`as notas obtidas foram ${nt1} e ${nt2}<br>`)
+            document.write(`A media obtida é ${m}<br>`)
+
+            if (m <= 6) {
+                document.write('Estuda mais <br>')
+            } else {
+                document.write('boa rapaz <br>')
+            }
+        }
+    </script>
+</body>
+</html>

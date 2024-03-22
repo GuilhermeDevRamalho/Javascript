@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        body {
+            background-color: rgb(235, 150, 235);
+            color: white;
+        }
+
+        main {
+            background-color: rgb(136, 32, 136);
+            margin: 400px;
+            width: 450px;
+            padding: 50px 20px 50px 30px;
+            border-radius: 100px;
+        }
+
+        nav > h2 {
+            text-indent: 175px;
+        }
+
+        nav > #res {
+            background-color: rgb(177, 70, 177);
+            width: 100px;
+            height: 20px;
+            margin: auto;
+            font-size: 20px;
+            text-align: center;
+        }
+</style>
+</head>
+<body>
+    <main>
+        <input type="number" name="" id="cx1"> +
+        <input type="number" name="" id="cx2">
+        <input type="button" value="SOMAR" onclick="somar()">
+        <nav>
+            <h2>Resposta</h2>
+            <div id="res">
+            </div>
+        </nav>
+    </main>
+    <script>
+        function somar() {
+            var cx = document.getElementById('cx1')
+            var cx1 = document.getElementById('cx2')
+            var res = document.getElementById('res')
+            
+            var n1 = Number(cx.value)
+            var n2 = Number(cx1.value)
+
+            var s = n1 + n2
+
+            res.innerHTML = s
+        }
+    </script>
+</body>
+</html>

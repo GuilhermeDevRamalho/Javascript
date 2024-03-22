@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+    <script>
+        var salario = Number.parseFloat(window.prompt('qual seu salario?'))
+
+        var res = salario >= 1300 ? ' e você recebe mais do que um salario minimo' : ' e você recebe menos que um salario minimo'
+
+        document.write('voce recebe '+ salario.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}) , res)
+        
+    </script>
+</body>
+</html>

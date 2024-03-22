@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio</title>
+    <style>
+
+        body {
+            color: white;
+            background-color: #4e4eff;
+        }
+
+        #d {
+            color: white;
+            background-color: rgb(79, 202, 186);
+            font-size: 20px;
+        }
+
+        #d:active {
+            background-color: black;
+        }
+
+        #number {
+            width: 80px;
+        }
+
+        main {
+            background-color: #4040d8;
+            width: 200px;
+            padding: 20px;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        main > h1 {
+            text-indent: 20px;
+        }
+
+    </style>
+    <!--Escreva um programa em javascript que seja capaz de calcular a tabuada de um determinado número (de 1 a 20). O programa deve começar pedindo o número a ser usado nos cálculos e então salvar todos os resultados de multiplicações de 1 a 20 usando o número informado dentro de uma variável do tipo string. Depois o programa deve exibir esses resultados e finalizar.-->
+</head>
+<body>
+    <main>
+        <h1>Calculando</h1>
+        <input type="number" name="txt" id="number">
+        <input type="button" value="Calcular" onclick="clicar()" id="d">
+        <div id="res"></div>
+    </main>
+    <script>
+        function clicar() {
+            var number = Number(document.getElementById('number').value)
+            var resultado = document.getElementById('res')
+
+            for (var c = 1 ; c <= 20 ; c++) {
+                var mul = c * number
+                res.innerHTML += ( c + ` x ` + number + ` = ` + mul + "<br>" )
+            }
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        body {
+            font-size: 19px;
+        }
+
+        input {
+            height: 30px;
+            width: 200px;
+        }
+
+        #contar {
+            background-color: green;
+            color: white;
+            height: 35px;
+            width: 80px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Contando de 0 até um número positivo qualquer</h1>
+    <p>escolha o limite final para a contagem a partir do 0 (digite apenas números positivos)</p>
+    <input type="number" name="" id="txt1">
+    <input type="button" value="Contar" id="contar" onclick="clica()">
+    <div id="res"></div>
+    <script>
+        function clica() {
+            var res = document.getElementById('res')
+            var txt = document.getElementById('txt1')
+
+            var n = Number(txt.value)
+            
+            for (var c = 0; c <= n ; c++ ) {
+                res.innerHTML += c
+            }
+        }
+    </script>
+</body>
+</html>
